@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            color: aliceblue;
+            background-color: red;
+            width: 300px;
+        }
+        
+        div:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Hover</h1>
+    <p>pase el mousse por el texto de abajo</p>
+    <div>Pase el mousse por aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fin del ejemplo</p>
+</body>
+</html>

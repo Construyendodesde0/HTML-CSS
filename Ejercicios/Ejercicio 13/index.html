@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias en html</title>
+</head>
+<body>
+    <h1>Imagenes dinamicas</h1>
+    <p>Intentamos abrir el sitiio en diferentes dispositivos o simplemente aumentamos y disminuimos el del navegador</p>
+    <picture>
+        
+        <source media="(max-width:750px )" srcset="imagenes/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagenes/foto-m.png" type="image/png">
+        <img src="imagenes/foto-g.png" alt="Imagen flexible">
+    </picture>
+    <h1>Reproduciendo audios</h1>
+    <p>vamos a aprender a reproducir audios en HTML</p>
+    <audio src="media/sambagitana.mp3" controls autoplay></audio>
+
+    <audio>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg"
+    </audio>
+    
+</body>
+</html>
