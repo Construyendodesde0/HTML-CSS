@@ -1,0 +1,220 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A+A | Peluquería y Diseño de Cejas/Pestañas</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+        <!-- Google Translate -->
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </head>
+    
+<body>
+    <header>
+        <div class="header-container">
+            <h1>A+A</h1>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="gallery-trigger" data-gallery="peluqueria">Peluquería <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#" class="gallery-trigger" data-gallery="peluqueria">Galería de Trabajos</a></li>
+                            <li><a href="#">Cortes</a></li>
+                            <li><a href="#">Coloración</a></li>
+                            <li><a href="#">Tratamientos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="gallery-trigger" data-gallery="pestanas">Pestañas/Cejas <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#" class="gallery-trigger" data-gallery="pestanas">Galería de Trabajos</a></li>
+                            <li><a href="#">Lash Lifting</a></li>
+                            <li><a href="#">Brow Lamination</a></li>
+                            <li><a href="#">Diseño</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="contact-trigger">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="translate-btn">
+                <button id="translateBtn"><i class="fas fa-globe"></i></button>
+                <ul class="translate-menu">
+                    <li><a href="#" data-lang="es">Español</a></li>
+                    <li><a href="#" data-lang="en">English</a></li>
+                    <li><a href="#" data-lang="pt">Português</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+<!-- Modal para Galería de Peluquería -->
+<div class="modal-overlay gallery-modal" id="peluqueria-gallery">
+    <div class="gallery-container">
+        <button class="close-modal">&times;</button>
+        <h3>Nuestros Trabajos de Peluquería</h3>
+        <div class="gallery-slider">
+            <div class="slide active">
+                <img src="imagenes/modelopelu.jpeg" alt="Trabajo de peluquería 1">
+            </div>
+            <div class="slide">
+                <img src="imagenes/modelopelu2.jpeg" alt="Trabajo de peluquería 2">
+            </div>
+            <div class="slide">
+                <img src="imagenes/modelopelu3.jpeg" alt="Trabajo de peluquería 3">
+            </div>
+            <div class="gallery-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Galería de Pestañas/Cejas -->
+<div class="modal-overlay gallery-modal" id="pestanas-gallery">
+    <div class="gallery-container">
+        <button class="close-modal">&times;</button>
+        <h3>Nuestros Trabajos de Pestañas/Cejas</h3>
+        <div class="gallery-slider">
+            <div class="slide active">
+                <img src="imagenes/modeloceja.jpeg" alt="Trabajo de pestañas 1">
+            </div>
+            <div class="slide">
+                <img src="imagenes/modeloceja2.jpeg" alt="Trabajo de pestañas 2">
+            </div>
+            <div class="slide">
+                <img src="imagenes/modeloceja3.jpeg" alt="Trabajo de pestañas 3">
+            </div>
+            <div class="gallery-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+     
+    <!-- Reemplaza el modal de contacto existente con este: -->
+<div class="modal-overlay" id="contact-modal">
+    <div class="service-modal">
+        <button class="close-modal">&times;</button>
+        <h3>Selecciona tu servicio</h3>
+        <p>Elige el profesional que deseas contactar:</p>
+        
+        <div class="professional-options">
+            <div class="professional-card" data-professional="peluqueria">
+                <img src="imagenes/logoalex.jpeg" alt="Alexander - Peluquería">
+                <h4>Alexander</h4>
+                <p>Especialista en Peluquería</p>
+                <ul class="service-list">
+                    <li>Cortes modernos</li>
+                    <li>Coloración profesional</li>
+                    <li>Tratamientos capilares</li>
+                </ul>
+                <button class="select-btn">Seleccionar</button>
+            </div>
+            
+            <div class="professional-card" data-professional="pestanas">
+                <img src="imagenes/logoailin.jpeg" alt="Ailin - Pestañas">
+                <h4>Ailin</h4>
+                <p>Especialista en Pestañas/Cejas</p>
+                <ul class="service-list">
+                    <li>Lash Lifting</li>
+                    <li>Brow Lamination</li>
+                    <li>Diseño de cejas</li>
+                </ul>
+                <button class="select-btn">Seleccionar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <main>
+        <section class="services-section">
+            <h2>Nuestros servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="imagenes/logoalex.jpeg" alt="Peluquería" class="service-img">
+                    <div class="service-content">
+                        <h3>Peluquería</h3>
+                        <p>Cortes, coloración y tratamientos capilares.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="imagenes/logoailin.jpeg" alt="Pestañas" class="service-img">
+                    <div class="service-content">
+                        <h3>Pestañas</h3>
+                        <p>Lash lifting, Brow lamination, Design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="peluqueria">Peluquería</button>
+                    <button class="tab-btn" data-tab="pestanas">Pestañas</button>
+                </div>
+                
+                <div class="tab-content active" id="peluqueria">
+                    <img src="imagenes/corte.jpg" alt="Peluquería 1">
+                    <img src="imagenes/tijera.jpg" alt="Peluquería 2">
+                </div>
+                
+                <div class="tab-content" id="pestanas">
+                    <img src="imagenes/lash.jpg" alt="Pestañas 1">
+                    <img src="imagenes/mano.jpg" alt="Pestañas 2">
+                </div>
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Belleza con esencia minimalista</h2>
+                <button class="btn">Reserva tu cita</button>
+                
+                <div class="instagram-profiles">
+                    <h3>Síguenos en Instagram</h3>
+                    <div class="instagram-grid">
+                        <a href="https://www.instagram.com/thebarberhousept/" target="_blank" class="instagram-card">
+                            <img src="imagenes/logoalex.jpeg" alt="Alex Peluquería">
+                            <div class="instagram-info">
+                                <i class="fab fa-instagram"></i>
+                                <span>@alex_peluqueria</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.instagram.com/ailingbeautylab/" target="_blank" class="instagram-card">
+                            <img src="imagenes/logoailin.jpeg" alt="Ailin Pestañas">
+                            <div class="instagram-info">
+                                <i class="fab fa-instagram"></i>
+                                <span>@ailin_pestanas</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>© 2025 <strong>A+A Estética</strong>. Todos los derechos reservados.</p>
+            
+        </div>
+    </footer>
+
+    <!-- Google Translate Element -->
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+<script src="js/script.js"></script>
+</body>
+</html>
