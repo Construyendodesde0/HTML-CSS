@@ -28,6 +28,59 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
+.has-tooltip {
+    position: relative;
+}
+
+.service-tooltip {
+    position: absolute;
+    left: 105%;
+    top: 0;
+    width: 250px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 15px;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    transform: translateX(10px);
+}
+
+.has-tooltip:hover .service-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.service-tooltip h3 {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.service-tooltip p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Para móviles */
+@media (max-width: 768px) {
+    .service-tooltip {
+        left: 50%;
+        top: 100%;
+        width: 200px;
+        transform: translateX(-50%) translateY(10px);
+    }
+    
+    .has-tooltip:hover .service-tooltip {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+
 /* --- Botón de traducción --- */
 .translate-btn {
     position: absolute;
@@ -273,7 +326,7 @@ nav a:hover::after {
 
 .tab-content img {
     width: 100%;
-    height: 300px;
+    height: 500px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);

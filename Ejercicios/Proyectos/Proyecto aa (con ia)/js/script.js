@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupGalleryControls(peluqueriaGallery);
     setupGalleryControls(pestanasGallery);
 
-    // Resto de tu código JavaScript (tabs, traducción, etc.)
+   
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
 
