@@ -3,35 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas</title>
+    <title>Provincias Argentinas</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        h1 {
+            bac
+        }
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(0, 0, 0);
+            color: white;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
+        tbody > tr:nth-child(2n) {
+             background-color: lightgray;
+        }
         thead {
             background-color: gray;
             color: white;
         }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
         td.num {
             text-align: right;
+        }
+        tfoot {
+            background-color: gray;
+            color: white;
         }
     </style>
 </head>
 <body>
     <h1>Uso de tablas grandes</h1>
     <table>
+        <caption>Población de las provincias Argentinas</caption>
         <thead>
          <tr>
-             <th>Estado</th>
-             <th>Población</th>
+             <th scope="col">Estado</th>
+             <th scope="col" style="width: 200px;">Población</th>
          </tr>
         </thead>
 
@@ -48,14 +72,100 @@
             <td>Santa Fé</td>
             <td class="num">3 544 908</td>
           </tr>
+          <tr>
+            <td>Provincia de Mendoza</td>
+            <td class="num">2 043 540</td>
+          </tr>
+          <tr>
+            <td>Provincia de Tucumán</td>
+            <td class="num">1 731 820</td>
+          </tr>
+          <tr>
+            <td>Provincia de Salta</td>
+            <td class="num">1 441 351</td>
+          </tr>
+          <tr>
+            <td>Provincia de Entre Ríos</td>
+            <td class="num">1 425 578</td>
+          </tr>
+          <tr>
+            <td>Provincia de Misiones</td>
+            <td class="num">1 278 873</td>
+          </tr>
+          <tr>
+            <td>Provincia de Corrientes</td>
+            <td class="num">1 212 696</td>
+        </tr>
+        <tr>
+            <td>Provincia de Chaco</td>
+            <td class="num">1 129 606</td>
+        </tr>
+        <tr>
+            <td>Provincia de Santiago del Estero</td>
+            <td class="num">1 060 906</td>
+        </tr>
+        <tr>
+            <td>Provincia de San Juan</td>
+            <td class="num">822 853</td>
+        </tr>
+        <tr>
+            <td>Provincia de Jujuy</td>
+            <td class="num">811 611</td>
+        </tr>
+        <tr>
+            <td>Provincia de Río Negro</td>
+            <td class="num">750 768</td>
+        </tr>
+        <tr>
+            <td>Provincia de Neuquén</td>
+            <td class="num">710 814</td>
+        </tr>
+        <tr>
+            <td>Provincia de Formosa</td>
+            <td class="num">607 419</td>
+        </tr>
+        <tr>
+            <td>Provincia de Chubut</td>
+            <td class="num">592 621</td>
+        </tr>
+        <tr>
+            <td>Provincia de San Luis</td>
+            <td class="num">542 069</td>
+        </tr>
+        <tr>
+            <td>Provincia de Catamarca</td>
+            <td class="num">429 562</td>
+        </tr>
+        <tr>
+            <td>Provincia de La Rioja</td>
+            <td class="num">383 865</td>
+        </tr>
+        <tr>
+            <td>Provincia de La Pampa</td>
+            <td class="num">361 859</td>
+        </tr>
+        <tr>
+            <td>Provincia de Santa Cruz</td>
+            <td class="num">337 226</td>
+        </tr>
+        <tr>
+            <td>Provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur</td>
+            <td class="num">185 732</td>
+        </tr>
         </tbody>
 
         <tfoot>
          <tr>
-            <th>Total de habitantes</th>
-            <td><strong>45 892 285</strong></td>
+            <th scope="row">Total de habitantes</th>
+            <td class="num"><strong>45 892 285</strong></td>
          </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni error consectetur dolor nobis pariatur praesentium quaerat nihil numquam non repellat eaque fuga dolorem, possimus quae corrupti rerum, explicabo nostrum!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam incidunt necessitatibus totam eligendi iste praesentium, temporibus placeat consectetur laborum facilis quia delectus aliquam quas nam nostrum odio vitae sint maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias placeat similique maiores vel accusamus maxime odio voluptatibus. Suscipit laudantium velit reiciendis, possimus, ea earum sint, iure quas dicta exercitationem sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim error facere quaerat ipsam necessitatibus. Autem fugit laboriosam expedita deserunt saepe optio, iusto iure ad obcaecati magnam pariatur, doloribus voluptatibus aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dignissimos corporis doloribus sapiente suscipit voluptas unde minima adipisci praesentium illo ducimus voluptates soluta neque enim exercitationem voluptate eligendi, ipsum perspiciatis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni error consectetur dolor nobis pariatur praesentium quaerat nihil numquam non repellat eaque fuga dolorem, possimus quae corrupti rerum, explicabo nostrum!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam incidunt necessitatibus totam eligendi iste praesentium, temporibus placeat consectetur laborum facilis quia delectus aliquam quas nam nostrum odio vitae sint maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias placeat similique maiores vel accusamus maxime odio voluptatibus. Suscipit laudantium velit reiciendis, possimus, ea earum sint, iure quas dicta exercitationem sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim error facere quaerat ipsam necessitatibus. Autem fugit laboriosam expedita deserunt saepe optio, iusto iure ad obcaecati magnam pariatur, doloribus voluptatibus aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dignissimos corporis doloribus sapiente suscipit voluptas unde minima adipisci praesentium illo ducimus voluptates soluta neque enim exercitationem voluptate eligendi, ipsum perspiciatis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni error consectetur dolor nobis pariatur praesentium quaerat nihil numquam non repellat eaque fuga dolorem, possimus quae corrupti rerum, explicabo nostrum!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam incidunt necessitatibus totam eligendi iste praesentium, temporibus placeat consectetur laborum facilis quia delectus aliquam quas nam nostrum odio vitae sint maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias placeat similique maiores vel accusamus maxime odio voluptatibus. Suscipit laudantium velit reiciendis, possimus, ea earum sint, iure quas dicta exercitationem sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim error facere quaerat ipsam necessitatibus. Autem fugit laboriosam expedita deserunt saepe optio, iusto iure ad obcaecati magnam pariatur, doloribus voluptatibus aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dignissimos corporis doloribus sapiente suscipit voluptas unde minima adipisci praesentium illo ducimus voluptates soluta neque enim exercitationem voluptate eligendi, ipsum perspiciatis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni error consectetur dolor nobis pariatur praesentium quaerat nihil numquam non repellat eaque fuga dolorem, possimus quae corrupti rerum, explicabo nostrum!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam incidunt necessitatibus totam eligendi iste praesentium, temporibus placeat consectetur laborum facilis quia delectus aliquam quas nam nostrum odio vitae sint maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias placeat similique maiores vel accusamus maxime odio voluptatibus. Suscipit laudantium velit reiciendis, possimus, ea earum sint, iure quas dicta exercitationem sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim error facere quaerat ipsam necessitatibus. Autem fugit laboriosam expedita deserunt saepe optio, iusto iure ad obcaecati magnam pariatur, doloribus voluptatibus aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dignissimos corporis doloribus sapiente suscipit voluptas unde minima adipisci praesentium illo ducimus voluptates soluta neque enim exercitationem voluptate eligendi, ipsum perspiciatis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni error consectetur dolor nobis pariatur praesentium quaerat nihil numquam non repellat eaque fuga dolorem, possimus quae corrupti rerum, explicabo nostrum!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam incidunt necessitatibus totam eligendi iste praesentium, temporibus placeat consectetur laborum facilis quia delectus aliquam quas nam nostrum odio vitae sint maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias placeat similique maiores vel accusamus maxime odio voluptatibus. Suscipit laudantium velit reiciendis, possimus, ea earum sint, iure quas dicta exercitationem sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim error facere quaerat ipsam necessitatibus. Autem fugit laboriosam expedita deserunt saepe optio, iusto iure ad obcaecati magnam pariatur, doloribus voluptatibus aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dignissimos corporis doloribus sapiente suscipit voluptas unde minima adipisci praesentium illo ducimus voluptates soluta neque enim exercitationem voluptate eligendi, ipsum perspiciatis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni error consectetur dolor nobis pariatur praesentium quaerat nihil numquam non repellat eaque fuga dolorem, possimus quae corrupti rerum, explicabo nostrum!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam incidunt necessitatibus totam eligendi iste praesentium, temporibus placeat consectetur laborum facilis quia delectus aliquam quas nam nostrum odio vitae sint maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias placeat similique maiores vel accusamus maxime odio voluptatibus. Suscipit laudantium velit reiciendis, possimus, ea earum sint, iure quas dicta exercitationem sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim error facere quaerat ipsam necessitatibus. Autem fugit laboriosam expedita deserunt saepe optio, iusto iure ad obcaecati magnam pariatur, doloribus voluptatibus aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dignissimos corporis doloribus sapiente suscipit voluptas unde minima adipisci praesentium illo ducimus voluptates soluta neque enim exercitationem voluptate eligendi, ipsum perspiciatis!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni error consectetur dolor nobis pariatur praesentium quaerat nihil numquam non repellat eaque fuga dolorem, possimus quae corrupti rerum, explicabo nostrum!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam incidunt necessitatibus totam eligendi iste praesentium, temporibus placeat consectetur laborum facilis quia delectus aliquam quas nam nostrum odio vitae sint maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias placeat similique maiores vel accusamus maxime odio voluptatibus. Suscipit laudantium velit reiciendis, possimus, ea earum sint, iure quas dicta exercitationem sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim error facere quaerat ipsam necessitatibus. Autem fugit laboriosam expedita deserunt saepe optio, iusto iure ad obcaecati magnam pariatur, doloribus voluptatibus aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dignissimos corporis doloribus sapiente suscipit voluptas unde minima adipisci praesentium illo ducimus voluptates soluta neque enim exercitationem voluptate eligendi, ipsum perspiciatis!</p>
 </body>
 </html>
