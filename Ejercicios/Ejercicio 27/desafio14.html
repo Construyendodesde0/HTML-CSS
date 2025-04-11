@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 14</title>
+    <style>
+        table {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            width: 70%;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+        }
+        th.otras {
+            background-color: white;
+            color: black;
+            font-weight: bolder;
+        }
+        td.promedio{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+           <tr>
+               <th>Área</th>
+               <th>Disciplinas</th>
+               <th colspan="2" >
+                  Notas
+                  <div style="display: flex; border-top: 1px solid black; margin-top: 5px;">
+                    <div style="flex: 1; border-right: 1px solid black; padding: 2px;">Nota 1</div>
+                    <div style="flex: 1; padding: 2px;">Nota 2</div>
+                  </div>
+               </th>
+               <th>Promedio</th>
+           </tr>
+           <tr>
+               <th rowspan="4" scope="rowgroup" class="otras">Exactas</th>
+               <td>Matemática</td>
+               <td>7</td>
+               <td>8</td>
+               <td>7.5</td>
+           </tr>
+           <tr>
+            <td>Física</td>
+            <td>9</td>
+            <td>8</td>
+            <td>8.5</td>
+           </tr>
+           <tr>
+            <td>Química</td>
+            <td>6</td>
+            <td>4</td>
+            <td>5</td>
+           </tr>
+           <tr>
+            <td>Biología</td>
+            <td>3</td>
+            <td>7</td>
+            <td>5</td>
+           </tr>
+           <tr>
+            <th colspan="4">Média de exactas</th>
+            <td class="promedio">6.5</td>
+           </tr>
+           <tr>
+            <th rowspan="2" scope="rowgroup" class="otras">Sociales</th>
+            <td>História</td>
+            <td>7</td>
+            <td>8</td>
+            <td>7.5</td>
+           </tr>
+           <tr>
+            <td>Geografía</td>
+            <td>8</td>
+            <td>9</td>
+            <td>8.5</td>
+           </tr>
+           <tr>
+            <th colspan="4">Promedio de Sociales</th>
+            <td class="promedio">8</td>
+           </tr>
+        </thead>
+    </table>
+</body>
+</html>
