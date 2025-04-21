@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Ejemplo de formulario</h1>
+    <form action="registro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado/Provincia: </label>
+            <select name="Estado" id="iest">
+                <optgroup label="BsAs">
+                    <option value="BsAs">Buenos Aires</option>
+                </optgroup>
+                <optgroup label="Centro">
+                    <option value="Cba" selected>Córdoba</option>
+                    <option value="Er">Entre Ríos</option>
+                     <option value="StaFe">Santa Fé</option>
+                </optgroup>
+                <optgroup label="Cuyo">
+                    <option value="Mza">Mendoza</option>
+                    <option value="LR">La Rioja</option>
+                    <option value="SJ">San Juan</option>
+                    <option value="SL">San Luis</option>
+                </optgroup>
+                <optgroup label="Patagonia">
+                    <option value="CHU">Chubut</option>
+                    <option value="LP">La Pampa</option>
+                    <option value="NQ">Neuquén</option>
+                    <option value="RN">Rio Negro</option>
+                    <option value="SC">Santa Cruz</option>
+                    <option value="TDF">Tierra del Fuego</option>
+                </optgroup>
+                <optgroup label="NOA">
+                    <option value="cat">Catamarca</option>
+                    <option value="Ju">Jujuy</option>
+                    <option value="Sal">Salta</option>
+                    <option value="SDE">Santiago Del Estero</option>
+                    <option value="Tuc">Tucumán</option>
+                </optgroup>
+                <optgroup label="NEA">
+                    <option value="CHA">Chaco</option>
+                    <option value="CO">Corrientes</option>
+                    <option value="FO">Formosa</option>
+                    <option value="MI">Misiones</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profesión: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Cocinero</option>
+                <option>Contabilista</option>
+                <option>Dentista</option>
+                <option>Desenvolvedor</option>
+                <option>Enfermero</option>
+                <option>Veterinario</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="msg">Mensaje: </label>
+            <textarea name="msg" id="imsg" cols="25" rows="7" placeholder="Deje aquí su mensaje..."></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </p>
+    </form>
+</body>
+</html>

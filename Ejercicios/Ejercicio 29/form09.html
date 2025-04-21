@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+   <form action="registro.php" method="get" autocomplete="yes">
+       <p>
+        <label for="iano">En que año nació usted?</label>
+        <input type="number" name="ano" id="iano" min="1900" max="2025"
+        oninput="calcIdade()">
+       </p>
+       <p>
+        <label for="iedad">Su edad es: </label>
+        <output id="iedad">0 </output>
+       </p>
+       <p>
+           <input type="submit" value="Enviar">
+           <input type="reset" value="Limpiar">
+       </p>
+   </form>
+   <script>
+    function calcIdade () {
+        let actual = new Date().getFullYear()
+        iedad.innerHTML = Number(actual) - Number(iano.value)
+    }
+   </script>
+</body>
+</html>
