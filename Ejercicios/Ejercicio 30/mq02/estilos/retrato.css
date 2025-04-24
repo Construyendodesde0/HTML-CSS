@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/*DISPOSITIVOS VERTICALES*/
+
+body {
+    background-image: url('../imagenes/cev-portrait.jpg');
+    background-color: center bottom;
+}
