@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*TODAS LAS DEMAS MEDIAS*/
+--------------------------------------
+/*TYPICAL DEVICE BREAKPOINTS
+PANTALLAS PEQUENAS: HASTA 600PX
+CELULAR: DE 600PX HASTA 768PX
+TABLET: DE 768PX HASTA 992PX
+DESKTOP: DE 992PX HASTA 1200PX
+PANTALLAS GRANDES: 1200PX PARA ARRIBA*/
+
+@media print {
+
+    * {
+        font-family: 'Courier New', 'Courier', 'Moonspace';
+    }
+    
+    body {
+        background-image: url(../imagenes/back-print.jpg);
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black
+    }
+
+    main::after {
+        content: 'Esta impresión fue hecha a traves del sitio cursoemvide.com';
+        text-decoration: overline;
+    }
+        img#pc {display: none;}
+        img#imp {display: none;}
+        img#tv {display: none;}
+        img#tab {display: block;}
+        img#cel {display: none;}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagenes/back-tablet.jpg);
+    }
+        img#pc {display: none;}
+        img#imp {display: none;}
+        img#tv {display: none;}
+        img#tab {display: block;}
+        img#cel {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagenes/back-pc.jpg);
+    }
+        img#pc {display: block;}
+        img#imp {display: none;}
+        img#tv {display: none;}
+        img#tab {display: none;}
+        img#cel {display: none;}
+} 
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagenes/back-tv.jpg);
+    }
+    main {
+        width: 700px;
+    }
+        img#pc {display: none;}
+        img#imp {display: none;}
+        img#tv {display: block;}
+        img#tab {display: none;}
+        img#cel {display: none;}
+}

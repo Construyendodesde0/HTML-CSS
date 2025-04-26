@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+Media Queries</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body onresize="cambiotamano">
+    <header>
+        <h1>Mi página</h1>
+        <span id="burger"  class="material-symbols-outlined" onclick="clickmenu()">dataset</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opcion 1</a></li>
+                <li><a href="#">Opcion 2</a></li>
+                <li><a href="#">Opcion 3</a></li>
+                <li><a href="#">Opcion 4</a></li>
+                <li><a href="#">Opcion 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Probando las media queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla recusandae voluptatem veritatis pariatur id doloremque voluptatum facilis excepturi! Sint debitis tenetur earum tempora delectus amet ea nihil tempore consectetur assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum modi nesciunt voluptatem quaerat quia provident maiores, at facilis doloremque officia dolor iure a blanditiis sequi odio nam ipsam quidem nihil. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores optio totam itaque repellendus pariatur, debitis aliquid cupiditate ducimus dolores consectetur perferendis deleniti temporibus facere tempore, explicabo vitae amet laboriosam ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nostrum sit quas, libero praesentium blanditiis eos labore! Corrupti sint aliquam repudiandae, voluptas quos autem? Mollitia consequuntur nulla cupiditate ipsam? Provident.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cum repellendus, magnam quam eligendi expedita distinctio error ab esse iure! Eum, quisquam! Quo optio quidem mollitia. Velit quaerat nam facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum architecto fugiat fugit odio nesciunt omnis itaque nemo veritatis tempora nisi natus similique, dolores magni possimus corporis incidunt optio. Laudantium, quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo architecto natus illo. Mollitia numquam ipsa reiciendis minus? Earum nobis itaque molestiae corrupti iure consequatur hic atque, ea illum. Recusandae, ex.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis fuga praesentium atque enim expedita sunt a repellendus veniam ex animi debitis obcaecati, eius eligendi placeat voluptas rem. Voluptatibus, eveniet unde? Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nobis asperiores ipsum enim magni ipsa recusandae ab, esse magnam hic velit, sunt voluptas repudiandae aperiam, officia in voluptatibus deleniti doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut iure quos aliquam! Labore distinctio pariatur eum sint ipsa cum ad repellendus dignissimos alias nostrum, voluptates suscipit quis voluptate magnam?</p>
+        </article>
+    </main>
+<script>
+    function clickmenu () {
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+        }
+    }
+
+    function cambiotamano () {
+        if (window.innerWidth >= 768) {
+            itens.style.display = 'block'
+        } else {
+            itens.style.display = 'none'
+        }
+    }
+</script>
+</body>
+</html>
