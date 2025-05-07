@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        div.conteiner {
+            background-color: salmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        div#cja {
+            flex: 5 0 200px; 
+        }
+        div#cjb {
+            flex: 1 1 200px;
+        }
+        div#cjc {
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cja">A</div>
+        <div class="item" id="cjb">B</div>
+        <div class="item" id="cjc">C</div>
+    </div>
+</body>
+</html>

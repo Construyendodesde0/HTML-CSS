@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Flexbox</title>
+    <link rel="stylesheet" href="mediaquery.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            background-color: rgb(173, 173, 173);
+            height: 100vh;
+            width: 100vw;
+        }
+
+    header {
+        background-color: gray;
+        color: white;
+        padding: 10px;
+        
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header > h1 {
+        /*border: 1px dotted black;*/
+        flex: 0 0 200px;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.359);
+    }
+    nav {
+        /*border: 1px dotted black;*/
+       
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+    main {
+        background-color: white;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.404);
+    }
+    header > nav > a {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+    header > nav > a:hover {
+        background-color: white;
+        color: black;
+        transition: .5s;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi sitio web</h1>
+        <nav>
+            <a href="#">Opción 1</a>
+            <a href="#">Opción 2</a>
+            <a href="#">Opción 3</a>
+            <a href="#">Opción 4</a>
+            <a href="#">Opción 5</a>
+            <a href="#">Opción 6</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Prueba de Flexbox</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas excepturi deserunt blanditiis dignissimos corrupti iure veniam minus, eos sed repellendus amet perspiciatis error fugiat dolorum quae nihil necessitatibus, velit dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nobis deleniti a totam laborum esse blanditiis soluta, suscipit aspernatur in ullam expedita officiis repellendus voluptates obcaecati pariatur, veritatis exercitationem debitis!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quibusdam nemo velit, voluptas dolores odio corrupti? Unde excepturi eum hic amet minima ipsum voluptate provident vero repellendus, repudiandae consequatur? Voluptatibus!</p>
+    </main>
+</body>
+</html>
